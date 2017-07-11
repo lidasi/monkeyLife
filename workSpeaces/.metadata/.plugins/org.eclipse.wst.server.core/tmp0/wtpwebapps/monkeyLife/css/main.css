@@ -1,0 +1,42 @@
+* { margin: 0; padding: 0; }
+body { 
+	font: 13px "Trebuchet MS", Verdana, Helvetica, sans-serif; 
+	color: #666; 
+	width:100%; 
+	height:100%;
+	}
+
+#backgroundImage{
+/*    border: 1px solid #CCCCCC;
+    padding:90px 5px 10px;*/
+    background: url("../image/dock/backgroundImage.jpg") no-repeat;
+    background-size: cover;
+    -webkit-filter: blur(10px);
+    -ms-filter: blur(10px);
+    position:relative;
+    filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=10, MakeShadow=false);
+    animation:mymove 5s infinite;
+    -webkit-animation:mymove 5s infinite;
+}
+@keyframes mymove
+{
+    0%   {top:0px; background:url("../image/dock/backgroundImage.jpg");}
+    50% {top:0px; background:url("../image/dock/background_001.jpg");}
+    100% {top:0px; background:url("../image/dock/backgroundImage.jpg");}
+}
+
+@-webkit-keyframes mymove
+{
+    0%   {top:0px; background:url("../image/dock/backgroundImage.jpg");
+    }
+    50%   {top:0px; background:url("../image/dock/background_001.jpg");
+    }
+    100% {top:0px; background:url("../image/dock/backgroundImage.jpg");
+    }
+}
+#dockContainer { position: fixed; top: 60px; left: 20px; }
+#iframeDiv {position: fixed; top: 60px; left: 20px; }
+#jqDock { position: relative; bottom: 48px; }
+#jqDock li { list-style: none; margin-bottom: 10px }
+.jqDockLabel { background: #333; color: #fff; padding: 3px 10px; -webkit-border-radius: 10px; -moz-border-radius: 10px; }
+

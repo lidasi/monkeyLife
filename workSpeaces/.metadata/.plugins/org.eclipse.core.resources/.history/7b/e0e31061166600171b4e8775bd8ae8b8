@@ -1,0 +1,52 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" media="screen" href="css/all-examples.css">
+<link rel="stylesheet" type="text/css" href="UI/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<script type="text/javascript" src="UI/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/fisheye-iutil.min.js"></script>
+<script type="text/javascript" src="js/jquery.jqDock.min.js"></script>
+<title>My name's badUncle</title>
+</head>
+<body>
+	<div id="backgroundImage">
+</div>
+<div id="iframeDiv">
+    <iframe width="99%"
+            height="5%"
+            frameborder="no"
+            border="0"
+            marginwidth="0"
+            marginheight="0"
+            scrolling="no"
+            allowtransparency="yes"
+            src="html/top.html"></iframe>
+    <iframe
+            width="20%"
+            height="600px"
+            frameborder="no"
+            border="0"
+            marginwidth="0"
+            marginheight="0"
+            scrolling="no"
+            allowtransparency="yes"
+            src="index.html">
+    </iframe>
+    <iframe width="89"
+            height="600px"
+            frameborder="no"
+            border="0"
+            marginwidth="0"
+            marginheight="0"
+            scrolling="no"
+            allowtransparency="yes"
+            src="test_002.html">
+    </iframe>
+</div>
+</body>
+</html>
