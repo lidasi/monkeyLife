@@ -8,58 +8,77 @@
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/fisheye-iutil.min.js"></script>
 <script type="text/javascript" src="js/jquery.jqDock.min.js"></script>
- <script type="text/javascript">
-        $(function(){
-           /*  alert("可视高:"+$(window).height()); //浏览器当前窗口可视区域高度
-             alert("文档高:"+$(document).height()); //浏览器当前窗口文档的高度
-             alert("body高:"+$(document.body).height());//浏览器当前窗口文档body的高度
-             alert("总高高:"+$(document.body).outerHeight(true));//浏览器当前窗口文档body的总高度 包括border padding margin
-
-             alert("可视宽:"+$(window).width()); //浏览器当前窗口可视区域宽度
-             alert("文档宽:"+$(document).width());//浏览器当前窗口文档对象宽度
-             alert("body宽:"+$(document.body).width());//浏览器当前窗口文档body的宽度
-             alert("总宽宽:"+$(document.body).outerWidth(true));//浏览器当前窗口文档body的总宽度 包括border padding margin */
-            var height = 931;
-            var width = 1800;
-            $("#backgroundImage").height(height).width(width);
-        });
-    </script>
+<script type="text/javascript" src="js/jquery.layout.js"></script>
 <title>My name's badUncle</title>
+<script type="text/javascript"> 
+	var myLayout,middleLayout;
+	$(document).ready(function () {
+	 myLayout = $('body').layout(
+	        	{ 
+	                defaults:{
+					    applyDefaultStyles: false,
+	                	togglerTip_open:"close"
+	                ,   togglerTip_closed:"open"   
+	                }
+				,   west: {
+				        size:"300"
+					,	spacing_open:0
+	                ,	spacing_closed:0
+				}
+	            ,   center: {
+	    				size:"auto"
+	    			}    	
+	            });
+		 middleLayout = $('div.ui-layout-center').layout(
+		 { 
+		        applyDefaultStyles: false,
+			    north__paneSelector:		".middle-north" 
+	       ,	center__paneSelector:		".middle-center" 
+		   ,	spacing_open:			0 
+	       ,	spacing_closed:			0 
+	    });     
+	});
+</script>
+<style type="text/css">  
+	  .ui-layout-pane { 
+		padding: 0px; 
+		background: #efecdd; 
+		border-top: 5px solid #BBB;
+		border-bottom: 0px solid #BBB;
+		}
+	
+       .ui-layout-content {   
+           padding:    10px;   
+           position:   relative;    
+           overflow:   auto;   
+       }  
+       
+        .middle-north {
+			border-width:0px;
+			height:300px;
+		}
+		
+		.middle-center {
+			border-width:0px;
+			overflow:   auto; 
+		}
+
+</style> 
 </head>
-<body>
-	<div id="backgroundImage">
+<body bgcolor="#efecdd">
+	<div class="ui-layout-west" style="background:#FF9900">
+	  <iframe src="jsp/menubar.jsp" frameBorder="0" scrolling="no" width="100%" height="100%" marginheight="0" marginwidth="0"></iframe>
 	</div>
-<div id="iframeDiv">
-    <iframe width="99%"
-            height="5%"
-            frameborder="no"
-            border="0"
-            marginwidth="0"
-            marginheight="0"
-            scrolling="no"
-            allowtransparency="yes"
-            src="jsp/topbar.jsp"></iframe>
-    <iframe
-            width="20%"
-            height="600px"
-            frameborder="no"
-            border="0"
-            marginwidth="0"
-            marginheight="0"
-            scrolling="no"
-            allowtransparency="yes"
-            src="jsp/menubar.jsp">
-    </iframe>
-    <iframe width="89"
-            height="600px"
-            frameborder="no"
-            border="0"
-            marginwidth="0"
-            marginheight="0"
-            scrolling="no"
-            allowtransparency="yes"
-            src="jsp/topbar.jsp">
-    </iframe>
-</div>
+	
+	<div class="ui-layout-center" style="background:#FF9900;">
+	  <div class="middle-north" style="background:#CF9900">
+	     <div style="height:200px;" >
+	     	<iframe src="jsp/topbar.jsp" frameBorder="0" scrolling="no" width="100%" height="100%" marginheight="0" marginwidth="0"></iframe>
+	     </div>
+	  </div>
+	  <div class="middle-center">
+	     <iframe src="jsp/infopage.jsp" frameBorder="0" scrolling="no" width="100%" height="100%" marginheight="0" marginwidth="0"></iframe>
+	  </div>
+	</div>
 </body>
 </html>

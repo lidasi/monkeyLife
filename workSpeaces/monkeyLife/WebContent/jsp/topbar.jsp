@@ -4,9 +4,19 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" media="screen" href="../css/top.css">
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<title>topbar</title>
+<script type="text/javascript">
+        $(function(){
+            var height = 500;
+            var width = 1800;
+            $("#backgroundImage").height(height).width(width);
+        });
+    </script>
 </head>
 <body>
-
+	<div id="backgroundImage">
+	</div>
 </body>
 </html>
