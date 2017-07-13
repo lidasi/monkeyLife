@@ -16,7 +16,13 @@
     </script>
 </head>
 <body>
-	<div id="backgroundImage">
+	<div id="div-relative">
+		<div id ="backgroundImage"></div>
+			
+		<div id="title"><h1>BadUncleBlog</h1></div>
+			
+		
 	</div>
+	
 </body>
 </html>

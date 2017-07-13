@@ -5,19 +5,37 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="stylesheet" type="text/css" media="screen" href="../ui/bootstrap/css/bootstrap.min.css">
-<script type="text/javascript" src="../ui/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" media="screen" href="../css/info.css">
+<script type="text/javascript" src="../js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript">
+        $(function(){
+        	 var height = 1000;
+             var width = 1800;
+             $("#infoImage").height(height).width(width);
+           
+        });
+        var monkeyLife_001 = function() {
+        	alert("跳至详情")
+        }
+    </script>
 <title>infoPage</title>
 </head>
 <body>
-	<div class="panel panel-default">
-	    <div class="panel-heading">
-	        <h3 class="panel-title">
-	            带有 title 的面板标题
-	        </h3>
-	    </div>
-	    <div class="panel-body">
-	        面板内容
-	    </div>
+	<div id="infoRelative">
+		<div id="infoImage"></div>
 	</div>
+	<div id="content">
+		<div class="panel panel-default">
+		    <div class="panel-heading">
+		        <h3 class="panel-title" onmouseout="monkeyLife_001">
+		           <a href="#"> 程序猿的自我写照  ——BadUncle</a>
+		        </h3>
+		    </div>
+		    <div class="panel-body">
+		        这里是记录编程学习的过程
+		    </div>
+		</div>
+	</div>
+	 
 </body>
 </html>

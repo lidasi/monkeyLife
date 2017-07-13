@@ -1,0 +1,41 @@
+@CHARSET "UTF-8";
+#infoRelative{position:relative; 
+	width:100%; 
+	height:100%} 
+#infoImage{
+	position:absolute;
+	left:3px;
+	top:10px;
+/*    border: 1px solid #CCCCCC;
+    padding:90px 5px 10px;*/
+    background: url("../image/dock/infoImage_001.jpg") no-repeat;
+    background-size: cover;
+    -webkit-filter: blur(10px);
+    -ms-filter: blur(10px);
+    filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=10, MakeShadow=false);
+    animation:mymove 5s infinite;
+    -webkit-animation:mymove 5s infinite;
+}
+ @keyframes mymove
+{
+    0%   {top:10px; background:url("../image/dock/infoImage_001.jpg"); position:absolute;}
+    50% {top:10px; background:url("../image/dock/infoImage_002.jpg"); position:absolute;}
+    100% {top:10px; background:url("../image/dock/infoImage_001.jpg"); position:absolute;}
+}
+
+@-webkit-keyframes mymove
+{
+    0%   {top:0px; background:url("../image/dock/infoImage_001.jpg" position:absolute;);
+    }
+    50%   {top:0px; background:url("../image/dock/infoImage_002.jpg" position:absolute;);
+    }
+    100% {top:0px; background:url("../image/dock/infoImage_001.jpg" position:absolute;);
+    }
+}
+
+#content {position:absolute;
+	left:200px;
+	top:10px;
+	width: 70%;
+	height: 200px;
+	}

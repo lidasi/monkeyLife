@@ -1,0 +1,65 @@
+@CHARSET "UTF-8";
+#menuRelative{position:relative; 
+	width:200px; 
+	height:100%} 
+#menuImage{
+	position:absolute;
+	left:3px;
+	top:10px;
+/*    border: 1px solid #CCCCCC;
+    padding:90px 5px 10px;*/
+    background: url("../image/dock/backgroundImage.jpg") no-repeat;
+    background-size: cover;
+    -webkit-filter: blur(10px);
+    -ms-filter: blur(10px);
+    filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=10, MakeShadow=false);
+    animation:mymove 5s infinite;
+    -webkit-animation:mymove 5s infinite;
+}
+ @keyframes mymove
+{
+    0%   {top:10px; background:url("../image/dock/backgroundImage.jpg"); position:absolute;}
+    50% {top:10px; background:url("../image/dock/background_001.jpg"); position:absolute;}
+    100% {top:10px; background:url("../image/dock/backgroundImage.jpg"); position:absolute;}
+}
+
+@-webkit-keyframes mymove
+{
+    0%   {top:0px; background:url("../image/dock/backgroundImage.jpg" position:absolute;);
+    }
+    50%   {top:0px; background:url("../image/dock/background_001.jpg" position:absolute;);
+    }
+    100% {top:0px; background:url("../image/dock/backgroundImage.jpg" position:absolute;);
+    }
+}
+#headPortrait {
+	left: 30px;
+	top: 20px;
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	background: url("../image/dock/headPortrait.jpg") no-repeat;
+	border-radius:50%;
+	margin:10px auto;
+}
+#dockContainer { 
+	position: absolute; 
+	top: 2300px; 
+	left: 30px; }
+#iframeDiv {
+	position: fixed; 
+	top: 60px; 
+	left: 20px; }
+#jqDock { 
+	position: relative; 
+	bottom: 48px; }
+#jqDock li { 
+	list-style: none; 
+	margin-bottom: 0px }
+.jqDockLabel { 
+	background: #333; 
+	color: #fff; 
+	padding: 3px 10px; 
+	-webkit-border-radius: 10px; 
+	-moz-border-radius: 10px; 
+}

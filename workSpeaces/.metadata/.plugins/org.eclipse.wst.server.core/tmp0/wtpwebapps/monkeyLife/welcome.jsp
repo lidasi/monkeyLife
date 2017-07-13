@@ -21,7 +21,7 @@
 	                ,   togglerTip_closed:"open"   
 	                }
 				,   west: {
-				        size:"300"
+				        size:"200"
 					,	spacing_open:0
 	                ,	spacing_closed:0
 				}
@@ -66,7 +66,7 @@
 </style> 
 </head>
 <body bgcolor="#efecdd">
-	<div class="ui-layout-west" style="background:#FF9900">
+	<div class="ui-layout-west" style="background:#FF9900;">
 	  <iframe src="jsp/menubar.jsp" frameBorder="0" scrolling="no" width="100%" height="100%" marginheight="0" marginwidth="0"></iframe>
 	</div>
 	
@@ -76,7 +76,7 @@
 	     	<iframe src="jsp/topbar.jsp" frameBorder="0" scrolling="no" width="100%" height="100%" marginheight="0" marginwidth="0"></iframe>
 	     </div>
 	  </div>
-	  <div class="middle-center">
+	  <div class="middle-center" style="background:#FF9900;">
 	     <iframe src="jsp/infopage.jsp" frameBorder="0" scrolling="no" width="100%" height="100%" marginheight="0" marginwidth="0"></iframe>
 	  </div>
 	</div>

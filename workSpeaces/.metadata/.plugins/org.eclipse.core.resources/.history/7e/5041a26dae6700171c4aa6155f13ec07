@@ -1,0 +1,7 @@
+var infoPage = new function() {
+	
+}
+
+infoPage.init = function() {
+	
+}
