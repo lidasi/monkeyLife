@@ -1,0 +1,22 @@
+/*var infopage = new function() {
+	
+}*/
+
+infopage = function(title, content) {
+	var text='<ul><li><span class="name">姓名</span>'
+		+ '<input class="b1" type="text" /></li><li>'
+		+ '<span class="sex">性别</span><select class="b2" name="gender">'
+	+ '<option value="1">男</option><option value="0">女</option></select></li></ul>';
+	
+	var penl = '<div class="panel panel-default">'
+	    			+'<div class="panel-heading">'
+	    				+'<h3 class="panel-title">'
+	    					+'<a id="title_01" href="#"> '+title+'</a>'
+	    				+'</h3>'
+	    			+'</div>'
+	    			+'<div id="content_01" class="panel-body">'
+	    				+''+content+''
+	    			+'</div>'
+	    		+'</div>'
+	 $("#content").append(penl);
+}

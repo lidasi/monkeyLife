@@ -1,0 +1,11 @@
+var Infopage =  function() {
+	
+}
+
+Infopage.init = function(title, content) {
+	
+	var penl = '<div class="panel panel-default">'
+	    			
+	    		+'</div>'
+	 $("#infoContent").append(penl);
+}

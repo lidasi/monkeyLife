@@ -1,0 +1,54 @@
+var Menubar = function() {
+	
+}
+
+Menubar.init = function(page) {
+	var title = "";
+	var content = "";
+	var monkey = {"title": "猿生活", "content": "记录程序员的故事"};
+	if (page == "1") {
+		alert("猿生活");
+		title = "猿生活";
+		content = "记录程序员的故事";
+	} else if (page == "2") {
+		alert("EnglishStudy")
+		title = "EnglishStudy";
+		content = "学习英语的过程"
+	} else if (page == "3") {
+		alert("日本語の勉強")
+		title = "日本語の勉強";
+		content = "学习日语的过程"
+	} else if (page == "4") {
+		 alert("日常生活")
+		 title = "日常生活";
+		 content = "日常生活的记录"
+	} else if (page == "5") {
+		alert("感情写照")
+		title = "感情写照";
+		content = "感情的起伏"
+	} else if (page == "6") {
+		alert("脉络抒写")
+		title = "脉络抒写";
+		content = "记录人脉关系";
+	} else {
+		alert("记忆珍藏")
+		title = "记忆珍藏";
+		content = "喜欢过的人，爱过的人";
+	}
+	var infoContent = $("#infoContent")
+	/*	var penl = '<div class="panel panel-default">'
+		    			+'<div class="panel-heading">'
+		    				+'<h3 class="panel-title">'
+		    					+'<a id="title_01" href="#"> '+title+'</a>'
+		    				+'</h3>'
+		    			+'</div>'
+		    			+'<div id="content_01" class="panel-body">'
+		    				+''+content+''
+		    			+'</div>'
+		    		+'</div>'*/
+		var penl = "<div>脚本之家欢迎您</div>"
+	 
+		infoContent.html("")
+		infoContent.append(penl);
+
+}

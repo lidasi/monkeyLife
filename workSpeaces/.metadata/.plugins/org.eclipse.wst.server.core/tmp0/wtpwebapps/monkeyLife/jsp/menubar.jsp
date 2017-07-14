@@ -28,13 +28,13 @@
 		<div id="userName"><p>BadUncle</p></div>
 		<div id="dockContainer">
 		    <ul id="jqDock">
-		        <li><a class="img-circle" href="javascript:menubar.init(1)"><img src="../image/dock/monkey.png"   alt="Home" title="猿生活&nbsp;" /></a></li>
-		        <li><a class="img-circle" href="javascript:menubar.init(2)"><img src="../image/dock/English.png"  alt="Contact" title="EnglishStudy&nbsp;" /></a></li>
-		        <li><a class="img-circle" href="javascript:menubar.init(3)"><img src="../image/dock/Japanese.png"  alt="portfolio" title="日本語の勉強&nbsp;" /></a></li>
-		        <li><a class="img-circle" href="javascript:menubar.init(4)"><img src="../image/dock/Life.png"  alt="music" title="日常生活&nbsp;Examples" /></a></li>
-		        <li><a class="img-circle" href="javascript:menubar.init(5)"><img src="../image/dock/Feeling.png"  alt="video" width="128" title="感情写照" /></a></li>
-		        <li><a class="img-circle" href="javascript:menubar.init(6)"><img src="../image/dock/Contacts.png"  alt="history" width="128" title="脉络抒写" /></a></li>
-		        <li><a class="img-circle" href="javascript:menubar.init(7)"><img src="../image/dock/Memory.png"  alt="calendar" width="128" title="记忆珍藏" /></a></li>
+		        <li><a class="img-circle" href="javascript:Menubar.init(1)"><img src="../image/dock/monkey.png"   alt="Home" title="猿生活&nbsp;" /></a></li>
+		        <li><a class="img-circle" href="javascript:Menubar.init(2)"><img src="../image/dock/English.png"  alt="Contact" title="EnglishStudy&nbsp;" /></a></li>
+		        <li><a class="img-circle" href="javascript:Menubar.init(3)"><img src="../image/dock/Japanese.png"  alt="portfolio" title="日本語の勉強&nbsp;" /></a></li>
+		        <li><a class="img-circle" href="javascript:Menubar.init(4)"><img src="../image/dock/Life.png"  alt="music" title="日常生活&nbsp;Examples" /></a></li>
+		        <li><a class="img-circle" href="javascript:Menubar.init(5)"><img src="../image/dock/Feeling.png"  alt="video" width="128" title="感情写照" /></a></li>
+		        <li><a class="img-circle" href="javascript:Menubar.init(6)"><img src="../image/dock/Contacts.png"  alt="history" width="128" title="脉络抒写" /></a></li>
+		        <li><a class="img-circle" href="javascript:Menubar.init(7)"><img src="../image/dock/Memory.png"  alt="calendar" width="128" title="记忆珍藏" /></a></li>
 		    </ul>
 		</div><!-- end div #dockContainer -->
 	</div>

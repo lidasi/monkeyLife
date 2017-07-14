@@ -1,0 +1,7 @@
+var infopage = new function() {
+	
+}
+
+infopage.init = function(title, content) {
+	
+}

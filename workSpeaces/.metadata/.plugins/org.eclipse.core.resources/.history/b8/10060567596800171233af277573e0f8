@@ -1,0 +1,23 @@
+var Infopage =  function() {
+	
+}
+
+Infopage.init = function(title, content) {
+	var infoContent = $("#infoContent")
+/*	var penl = '<div class="panel panel-default">'
+	    			+'<div class="panel-heading">'
+	    				+'<h3 class="panel-title">'
+	    					+'<a id="title_01" href="#"> '+title+'</a>'
+	    				+'</h3>'
+	    			+'</div>'
+	    			+'<div id="content_01" class="panel-body">'
+	    				+''+content+''
+	    			+'</div>'
+	    		+'</div>'*/
+/*	var penl = "<div>脚本之家欢迎您</div>"
+ */
+	var penl = '<iframe src="jsp/infopage.jsp" frameBorder="0" scrolling="no" width="100%" height="100%" marginheight="0" marginwidth="0"></iframe>'
+'
+	infoContent.text("")
+	infoContent.append(penl);
+}

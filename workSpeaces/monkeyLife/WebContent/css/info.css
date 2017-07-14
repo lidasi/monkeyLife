@@ -33,9 +33,9 @@
     }
 }
 
-#content {position:absolute;
+.infoContent {position:absolute;
 	left:200px;
 	top:30px;
 	width: 70%;
-	height: 200px;
+	height: 100%;
 	}

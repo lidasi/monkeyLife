@@ -38,6 +38,8 @@
 	       ,	spacing_closed:			0 
 	    });     
 	});
+	
+	
 </script>
 <style type="text/css">  
 	  .ui-layout-pane { 
@@ -67,17 +69,17 @@
 </head>
 <body bgcolor="#efecdd">
 	<div class="ui-layout-west" style="background:#FF9900;">
-	  <iframe src="jsp/menubar.jsp" frameBorder="0" scrolling="no" width="100%" height="100%" marginheight="0" marginwidth="0"></iframe>
+	  <iframe src="jsp/menubar.jsp" id="menubar" frameBorder="0" scrolling="no" width="100%" height="100%" marginheight="0" marginwidth="0"></iframe>
 	</div>
 	
-	<div class="ui-layout-center" style="background:#FF9900;">
+	<div class="ui-layout-center" id="centerInfo" style="background:#FF9900;">
 	  <div class="middle-north" style="background:#CF9900">
 	     <div style="height:200px;" >
-	     	<iframe src="jsp/topbar.jsp" frameBorder="0" scrolling="no" width="100%" height="100%" marginheight="0" marginwidth="0"></iframe>
+	     	<iframe src="jsp/topbar.jsp" id="topbar" frameBorder="0" scrolling="no" width="100%" height="100%" marginheight="0" marginwidth="0"></iframe>
 	     </div>
 	  </div>
-	  <div class="middle-center" style="background:#FF9900;">
-	     <iframe src="jsp/infopage.jsp" frameBorder="0" scrolling="no" width="100%" height="100%" marginheight="0" marginwidth="0"></iframe>
+	  <div id="infoRes" class="middle-center" style="background:#FF9900;">
+	     <iframe src="jsp/monkeyLife.jsp" id="infopage" frameBorder="0" scrolling="no" width="100%" height="100%" marginheight="0" marginwidth="0"></iframe>
 	  </div>
 	</div>
 </body>
