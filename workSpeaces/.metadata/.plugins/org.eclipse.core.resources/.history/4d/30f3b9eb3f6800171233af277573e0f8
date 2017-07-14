@@ -1,7 +1,0 @@
-var infopage = new function() {
-	
-}
-
-infopage.init = function(title, content) {
-	var panel = "<div class="'panel panel-default'"></div>"
-}
